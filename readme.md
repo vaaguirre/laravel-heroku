@@ -3,20 +3,20 @@
 This project serves for a quick way to start a new Laravel project that will be deployed to Heroku.
 
 ## Setup
-1.Clone this repository.
-2.Run `composer install` from the root directory.
-3.Install the Heroku CLI tool if you haven't already and run `heroku create`.
-4.Generate a key for your app by running `php artisan key:generate --show`. Copy the key for the next step.
-5.Set the `APP_KEY` on Heroku application by running the following command and pasting your app key.
+1. Clone this repository.
+2. Run `composer install` from the root directory.
+3. Install the Heroku CLI tool if you haven't already and run `heroku create`.
+4. Generate a key for your app by running `php artisan key:generate --show`. Copy the key for the next step.
+5. Set the `APP_KEY` on Heroku application by running the following command and pasting your app key.
  
     heroku config:set APP_KEY=<your-app-key>
      
-6.Deploy to Heroku: `git push heroku master`
-7.Additionally, this project is configured to work with [ClearDB](https://elements.heroku.com/addons/cleardb). Just install the add-on and run migrations: 
+6. Deploy to Heroku: `git push heroku master`
+7. Additionally, this project is configured to work with [ClearDB](https://elements.heroku.com/addons/cleardb). Just install the add-on and run migrations: 
     
     heroku run php artisan migrate
 
-8.Run `heroku open` to view your new app in the browser. 
+8. Run `heroku open` to view your new app in the browser. 
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
